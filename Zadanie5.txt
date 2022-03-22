@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    string array[10] = {"Ноль","Один","Два","Три","Четыре","Пять","Шесть","Семь","Восемь","Девять"};
+    int n=0;
+    while (n < 10) {
+        cout << "Введите число (для выхода введите 10): \n";
+        cin >> n;
+        if (n >= 0 and n <= 9) cout << array[n] << "\n";
+    }
+    return 0;
+}
