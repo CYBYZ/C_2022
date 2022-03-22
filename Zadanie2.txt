@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int k = 0;
+    int n = 1;
+    while (n <= 1000) {
+        if (n % 7 == 0)  k = k + n; 
+        n=n+4;
+    }
+    cout << k;
+    return 0;
+}

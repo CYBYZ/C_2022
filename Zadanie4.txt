@@ -1,0 +1,30 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+int main()
+{
+    string filename;
+    cout << "Enter file name (output.txt): ";
+    cin >> filename;
+    ifstream inf(filename);
+    if (!inf)
+    {
+        
+        cerr << filename << " could not be opened or found" << "\n";
+        exit(1);
+    }
+    int i = 1;
+    while (inf)
+    {
+
+        string strInput;
+        inf >> strInput;
+        if (strInput!="")
+        cout << i << ". " << strInput << "\n";
+        i++;
+    }
+    
+    
+    return 0;
+}
