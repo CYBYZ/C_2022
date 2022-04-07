@@ -10,8 +10,6 @@ int main()
     cin >> str;
     for (int i = 0; i < strlen(str); i++) {
         cout << char (str[i] + 1); 
-        
     }
-    
     return 0;
 }
