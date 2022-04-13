@@ -8,6 +8,10 @@ public:
 		this->volume = volume;
 		used = 0;
 	}
+	Bucket(int volume, int used) {
+		this->volume = volume;
+		this->used = used;
+	}
 	void flush() {
 		used = 0;
 	}
