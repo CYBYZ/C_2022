@@ -6,10 +6,13 @@ using namespace std;
 int main()
 {
     int v;
+    int i;
     int c=0;
     cout << "Введите объем ведра: ";
     cin >> v;
-    Bucket bucket(v);
+    cout << "Введите использованный объем ведра: ";
+    cin >> i;
+    Bucket bucket(v,i);
     while (c != 3) {
 
         cout << "Ведро : \n Объем: " << bucket.volume << " л.\n Занято: " << bucket.used << " л.\n Что сделать? \n1)Опустошить ведро\n2)Наполнить ведро\n3)Выход\nВвод: ";
